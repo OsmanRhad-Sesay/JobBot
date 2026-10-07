@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+
+# Persistent browser session (contains LinkedIn auth cookies)
+data/.chrome-profile/
+
+# Scrape output
+data/*-jobs.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

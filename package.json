@@ -1,0 +1,29 @@
+{
+  "name": "jobbot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scrapes LinkedIn/Indeed for senior engineering roles, scores them against a resume, and sends alerts.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "scrape:linkedin": "tsc && node dist/scripts/scrape-linkedin.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.16",
+    "pg": "^8.23.1",
+    "puppeteer": "^25.12.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "typescript": "^6.0.3"
+  },
+  "allowScripts": {
+    "puppeteer@25.12.0": true
+  }
+}
